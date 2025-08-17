@@ -1,3 +1,5 @@
+# This file is for managing Python package dependencies.
+
 fastapi
 uvicorn
 requests

@@ -4,6 +4,8 @@
     { "src": "main.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "main.py" }
+    { "src": "/health", "dest": "main.py" },
+    { "src": "/manga/(.*)", "dest": "main.py" },
+    { "src": "/anime/(.*)", "dest": "main.py" }
   ]
 }

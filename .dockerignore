@@ -1,3 +1,5 @@
+# Ignore unnecessary files for Docker build
+
 venv
 __pycache__
 *.pyc

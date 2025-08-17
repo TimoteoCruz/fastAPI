@@ -20,7 +20,6 @@ def root():
         }
     }
 
-
 @app.get("/manga/{title}")
 def get_manga(title: str):
     url = f"https://api.jikan.moe/v4/manga?q={title}&limit=1"

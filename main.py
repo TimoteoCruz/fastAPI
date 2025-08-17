@@ -3,6 +3,11 @@ import requests
 
 app = FastAPI()
 
+@app.get("/health")
+def health_check():
+    return {"status": "API is running"}
+
+
 @app.get("/")
 def root():
     return {
@@ -12,7 +17,6 @@ def root():
             "anime": "/anime/naruto"
         }
     }
-
 
 
 @app.get("/manga/{title}")

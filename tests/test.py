@@ -27,4 +27,4 @@ def test_manga(title):
         print(f" Error {response.status_code} al buscar manga '{title}'")
 
 if __name__ == "__main__":
-    test_manga("")
+    test_manga("Berserk")

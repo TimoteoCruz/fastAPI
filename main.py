@@ -5,7 +5,8 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"msg": "Holaap Busca un manga!"}
+    return {"msg": "Hola! Busca tu manga favorito!"}  #This is the message that you´ll see in the root
+
 
 @app.get("/manga/{title}")
 def get_manga(title: str):
